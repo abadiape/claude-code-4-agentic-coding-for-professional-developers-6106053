@@ -25,3 +25,41 @@ b {
   font-family: "Hubot Sans", sans-serif;
   color: var(--pico-color-violet-500);
 }
+
+nav.container ul li details.dropdown summary {
+  font-size: calc(0.75 * var(--pico-font-size));
+  color: var(--pico-color-purple-500);
+}
+
+nav.container ul li details.dropdown ul {
+  text-align: left;
+}
+
+nav.container ul li details.dropdown ul li {
+  font-size: calc(0.75 * var(--pico-font-size));
+}
+
+nav.container ul li details.dropdown ul li a {
+  font-size: inherit;
+  padding-left: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
+[data-theme="light"] nav.container ul li details.dropdown ul li a {
+  color: black;
+}
+
+/* Modal responsive design */
+@media (max-width: 768px) {
+  dialog article hgroup > div {
+    flex-direction: column !important;
+    align-items: center;
+    text-align: center;
+  }
+
+  dialog article hgroup > div img {
+    width: 150px !important;
+    margin-bottom: 1rem;
+  }
+}
